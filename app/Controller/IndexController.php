@@ -14,6 +14,8 @@ namespace App\Controller;
 use App\Utils\Log;
 use Hyperf\Utils\Context;
 use Hyperf\Utils\Coroutine;
+use Hyperf\Utils\Exception\ParallelExecutionException;
+use Hyperf\Utils\Parallel;
 
 class IndexController extends AbstractController
 {
@@ -31,6 +33,7 @@ class IndexController extends AbstractController
 
     /**
      * test WaitGroup
+     * http://127.0.0.1:9501/index/test1
      */
     public function test1()
     {
@@ -48,7 +51,7 @@ class IndexController extends AbstractController
         // 创建协程 2
         co(function () use ($wg) {
             // some code
-            sleep(1);
+            sleep(3);
             Log::get()->info('B');
             // 计数器减一
             $wg->done();
@@ -57,5 +60,50 @@ class IndexController extends AbstractController
         $wg->wait();
         Log::get()->info('C');
         return [];
+    }
+
+    /**
+     * test Parallel 特性
+     * http://127.0.0.1:9501/index/test2
+     */
+    public function test2()
+    {
+        $parallel = new Parallel();
+        $parallel->add(function () {
+            sleep(1);
+            return Coroutine::id();
+        });
+        $parallel->add(function () {
+            sleep(3);
+            return Coroutine::id();
+        });
+
+        try{
+            // $results 结果为 [1, 2]
+            $results = $parallel->wait();
+            Log::get()->info(json_encode($results));
+            return $results;
+        } catch(ParallelExecutionException $e){
+            // $e->getResults() 获取协程中的返回值。
+            // $e->getThrowables() 获取协程中出现的异常。
+        }
+    }
+
+    /**
+     * test Parallel 特性
+     * http://127.0.0.1:9501/index/test3
+     */
+    public function test3()
+    {
+        return parallel([
+            function () {
+                sleep(1);
+                return Coroutine::id();
+            },
+            function () {
+                sleep(3);
+                return Coroutine::id();
+            }
+        ]);
     }
 }
