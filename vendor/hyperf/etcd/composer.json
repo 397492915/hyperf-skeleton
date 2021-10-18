@@ -1,0 +1,37 @@
+{
+    "name": "hyperf/etcd",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf",
+        "etcd"
+    ],
+    "description": "Etcd Client for Hyperf.",
+    "require": {
+        "php": ">=7.2",
+        "hyperf/guzzle": "~2.2.0",
+        "hyperf/utils": "~2.2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hyperf\\Etcd\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HyperfTest\\Etcd\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.2-dev"
+        },
+        "hyperf": {
+            "config": "Hyperf\\Etcd\\ConfigProvider"
+        }
+    }
+}
