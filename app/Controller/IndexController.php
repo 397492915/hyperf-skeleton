@@ -35,24 +35,25 @@ class IndexController extends AbstractController
     public function test1()
     {
         $wg = new \Hyperf\Utils\WaitGroup();
-        // 创建协程 A
+        //添加两个携程
+        $wg->add(2);
+        // 创建协程 1
         co(function () use ($wg) {
             // some code
-            // 计数器减一
-
-           //curl
+            //curl
             Log::get()->info('A');
+            // 计数器减一
             $wg->done();
         });
-        // 创建协程 B
+        // 创建协程 2
         co(function () use ($wg) {
             // some code
-            // 计数器减一
             //curl
             Log::get()->info('B');
+            // 计数器减一
             $wg->done();
         });
-        // 等待协程 A 和协程 B 运行完成
+        // 等待协程 1 和协程 2 运行完成（最后一个协程执行完毕后，会push消息，pop拿到数据停止阻塞）
         $wg->wait();
         Log::get()->info('C');
         return [];
