@@ -40,7 +40,7 @@ class IndexController extends AbstractController
         // 创建协程 1
         co(function () use ($wg) {
             // some code
-            //curl
+            sleep(1);
             Log::get()->info('A');
             // 计数器减一
             $wg->done();
@@ -48,7 +48,7 @@ class IndexController extends AbstractController
         // 创建协程 2
         co(function () use ($wg) {
             // some code
-            //curl
+            sleep(1);
             Log::get()->info('B');
             // 计数器减一
             $wg->done();
