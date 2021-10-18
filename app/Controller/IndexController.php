@@ -68,7 +68,8 @@ class IndexController extends AbstractController
      */
     public function test2()
     {
-        $parallel = new Parallel();
+        //每次执行最多5个协程
+        $parallel = new Parallel(5);
         $parallel->add(function () {
             sleep(1);
             return Coroutine::id();
