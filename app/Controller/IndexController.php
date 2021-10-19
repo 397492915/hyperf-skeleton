@@ -111,12 +111,22 @@ class IndexController extends AbstractController
         ]);
     }
 
+    /**
+     * 服务发现test
+     * @param CalculatorServiceInterface $calculatorService
+     * @return mixed
+     */
     public function test4(CalculatorServiceInterface $calculatorService)
     {
         Log::get()->info(Coroutine::id());
         return $calculatorService->add(2,5);
     }
 
+    /**
+     * 服务发现test
+     * @param TestServiceInterface $testService
+     * @return mixed
+     */
     public function test5(TestServiceInterface $testService)
     {
         Log::get()->info(Coroutine::id());
