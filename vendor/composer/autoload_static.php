@@ -7,9 +7,9 @@ namespace Composer\Autoload;
 class ComposerStaticInitd702c7b97488506f808f2bf5274a2541
 {
     public static $files = array (
+        '9b38cf48e83f5d8f60375221cd213eee' => __DIR__ . '/..' . '/phpstan/phpstan/bootstrap.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
-        '9b38cf48e83f5d8f60375221cd213eee' => __DIR__ . '/..' . '/phpstan/phpstan/bootstrap.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
@@ -17,13 +17,13 @@ class ComposerStaticInitd702c7b97488506f808f2bf5274a2541
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
-        '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
+        '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
         'bbeb7603826cb9296dde3ca1a840af47' => __DIR__ . '/..' . '/hyperf/utils/src/Functions.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
-        'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
         'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         'ff1b7935a93a4a9517db3ebe0533892a' => __DIR__ . '/..' . '/opentracing/opentracing/src/OpenTracing/Tags.php',
@@ -108,16 +108,14 @@ class ComposerStaticInitd702c7b97488506f808f2bf5274a2541
             'Laminas\\Stdlib\\' => 15,
             'Laminas\\Mime\\' => 13,
         ),
-        'I' => 
-        array (
-            'Installer\\' => 10,
-        ),
         'H' => 
         array (
             'Hyperf\\Utils\\' => 13,
             'Hyperf\\Tracer\\' => 14,
             'Hyperf\\Testing\\' => 15,
             'Hyperf\\ServiceGovernance\\' => 25,
+            'Hyperf\\ServiceGovernanceNacos\\' => 30,
+            'Hyperf\\ServiceGovernanceConsul\\' => 31,
             'Hyperf\\Server\\' => 14,
             'Hyperf\\Rpc\\' => 11,
             'Hyperf\\RpcServer\\' => 17,
@@ -125,6 +123,7 @@ class ComposerStaticInitd702c7b97488506f808f2bf5274a2541
             'Hyperf\\Redis\\' => 13,
             'Hyperf\\Process\\' => 15,
             'Hyperf\\Pool\\' => 12,
+            'Hyperf\\Nacos\\' => 13,
             'Hyperf\\ModelListener\\' => 21,
             'Hyperf\\ModelCache\\' => 18,
             'Hyperf\\Memory\\' => 14,
@@ -197,8 +196,8 @@ class ComposerStaticInitd702c7b97488506f808f2bf5274a2541
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'Zipkin\\' => 
         array (
@@ -307,8 +306,8 @@ class ComposerStaticInitd702c7b97488506f808f2bf5274a2541
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -374,10 +373,6 @@ class ComposerStaticInitd702c7b97488506f808f2bf5274a2541
         array (
             0 => __DIR__ . '/..' . '/laminas/laminas-mime/src',
         ),
-        'Installer\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/installer',
-        ),
         'Hyperf\\Utils\\' => 
         array (
             0 => __DIR__ . '/..' . '/hyperf/utils/src',
@@ -393,6 +388,14 @@ class ComposerStaticInitd702c7b97488506f808f2bf5274a2541
         'Hyperf\\ServiceGovernance\\' => 
         array (
             0 => __DIR__ . '/..' . '/hyperf/service-governance/src',
+        ),
+        'Hyperf\\ServiceGovernanceNacos\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hyperf/service-governance-nacos/src',
+        ),
+        'Hyperf\\ServiceGovernanceConsul\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hyperf/service-governance-consul/src',
         ),
         'Hyperf\\Server\\' => 
         array (
@@ -421,6 +424,10 @@ class ComposerStaticInitd702c7b97488506f808f2bf5274a2541
         'Hyperf\\Pool\\' => 
         array (
             0 => __DIR__ . '/..' . '/hyperf/pool/src',
+        ),
+        'Hyperf\\Nacos\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hyperf/nacos/src',
         ),
         'Hyperf\\ModelListener\\' => 
         array (
@@ -624,10 +631,14 @@ class ComposerStaticInitd702c7b97488506f808f2bf5274a2541
         'App\\Controller\\IndexController' => __DIR__ . '/../..' . '/app/Controller/IndexController.php',
         'App\\Exception\\BusinessException' => __DIR__ . '/../..' . '/app/Exception/BusinessException.php',
         'App\\Exception\\Handler\\AppExceptionHandler' => __DIR__ . '/../..' . '/app/Exception/Handler/AppExceptionHandler.php',
+        'App\\JsonRpc\\CalculatorService' => __DIR__ . '/../..' . '/app/JsonRpc/CalculatorService.php',
+        'App\\JsonRpc\\CalculatorServiceInterface' => __DIR__ . '/../..' . '/app/JsonRpc/CalculatorServiceInterface.php',
+        'App\\JsonRpc\\TestService' => __DIR__ . '/../..' . '/app/JsonRpc/TestService.php',
         'App\\Listener\\DbQueryExecutedListener' => __DIR__ . '/../..' . '/app/Listener/DbQueryExecutedListener.php',
         'App\\Listener\\QueueHandleListener' => __DIR__ . '/../..' . '/app/Listener/QueueHandleListener.php',
         'App\\Model\\Model' => __DIR__ . '/../..' . '/app/Model/Model.php',
         'App\\Process\\AsyncQueueConsumer' => __DIR__ . '/../..' . '/app/Process/AsyncQueueConsumer.php',
+        'App\\Utils\\Log' => __DIR__ . '/../..' . '/app/Utils/Log.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonConverterInterface' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonConverterInterface.php',
@@ -1724,6 +1735,21 @@ class ComposerStaticInitd702c7b97488506f808f2bf5274a2541
         'Hyperf\\ModelListener\\ConfigProvider' => __DIR__ . '/..' . '/hyperf/model-listener/src/ConfigProvider.php',
         'Hyperf\\ModelListener\\Listener\\ModelEventListener' => __DIR__ . '/..' . '/hyperf/model-listener/src/Listener/ModelEventListener.php',
         'Hyperf\\ModelListener\\Listener\\ModelHookEventListener' => __DIR__ . '/..' . '/hyperf/model-listener/src/Listener/ModelHookEventListener.php',
+        'Hyperf\\Nacos\\AbstractProvider' => __DIR__ . '/..' . '/hyperf/nacos/src/AbstractProvider.php',
+        'Hyperf\\Nacos\\Application' => __DIR__ . '/..' . '/hyperf/nacos/src/Application.php',
+        'Hyperf\\Nacos\\ApplicationFactory' => __DIR__ . '/..' . '/hyperf/nacos/src/ApplicationFactory.php',
+        'Hyperf\\Nacos\\Config' => __DIR__ . '/..' . '/hyperf/nacos/src/Config.php',
+        'Hyperf\\Nacos\\ConfigProvider' => __DIR__ . '/..' . '/hyperf/nacos/src/ConfigProvider.php',
+        'Hyperf\\Nacos\\Exception\\InvalidArgumentException' => __DIR__ . '/..' . '/hyperf/nacos/src/Exception/InvalidArgumentException.php',
+        'Hyperf\\Nacos\\Exception\\NacosThrowable' => __DIR__ . '/..' . '/hyperf/nacos/src/Exception/NacosThrowable.php',
+        'Hyperf\\Nacos\\Exception\\RequestException' => __DIR__ . '/..' . '/hyperf/nacos/src/Exception/RequestException.php',
+        'Hyperf\\Nacos\\Exception\\RuntimeException' => __DIR__ . '/..' . '/hyperf/nacos/src/Exception/RuntimeException.php',
+        'Hyperf\\Nacos\\Provider\\AccessToken' => __DIR__ . '/..' . '/hyperf/nacos/src/Provider/AccessToken.php',
+        'Hyperf\\Nacos\\Provider\\AuthProvider' => __DIR__ . '/..' . '/hyperf/nacos/src/Provider/AuthProvider.php',
+        'Hyperf\\Nacos\\Provider\\ConfigProvider' => __DIR__ . '/..' . '/hyperf/nacos/src/Provider/ConfigProvider.php',
+        'Hyperf\\Nacos\\Provider\\InstanceProvider' => __DIR__ . '/..' . '/hyperf/nacos/src/Provider/InstanceProvider.php',
+        'Hyperf\\Nacos\\Provider\\OperatorProvider' => __DIR__ . '/..' . '/hyperf/nacos/src/Provider/OperatorProvider.php',
+        'Hyperf\\Nacos\\Provider\\ServiceProvider' => __DIR__ . '/..' . '/hyperf/nacos/src/Provider/ServiceProvider.php',
         'Hyperf\\Pool\\Channel' => __DIR__ . '/..' . '/hyperf/pool/src/Channel.php',
         'Hyperf\\Pool\\ConfigProvider' => __DIR__ . '/..' . '/hyperf/pool/src/ConfigProvider.php',
         'Hyperf\\Pool\\Connection' => __DIR__ . '/..' . '/hyperf/pool/src/Connection.php',
@@ -1835,6 +1861,19 @@ class ComposerStaticInitd702c7b97488506f808f2bf5274a2541
         'Hyperf\\Server\\SwooleEvent' => __DIR__ . '/..' . '/hyperf/server/src/SwooleEvent.php',
         'Hyperf\\Server\\SwooleServerFactory' => __DIR__ . '/..' . '/hyperf/server/src/SwooleServerFactory.php',
         'Hyperf\\Server\\SwowServer' => __DIR__ . '/..' . '/hyperf/server/src/SwowServer.php',
+        'Hyperf\\ServiceGovernanceConsul\\ConfigProvider' => __DIR__ . '/..' . '/hyperf/service-governance-consul/src/ConfigProvider.php',
+        'Hyperf\\ServiceGovernanceConsul\\ConsulAgent' => __DIR__ . '/..' . '/hyperf/service-governance-consul/src/ConsulAgent.php',
+        'Hyperf\\ServiceGovernanceConsul\\ConsulAgentFactory' => __DIR__ . '/..' . '/hyperf/service-governance-consul/src/ConsulAgentFactory.php',
+        'Hyperf\\ServiceGovernanceConsul\\ConsulDriver' => __DIR__ . '/..' . '/hyperf/service-governance-consul/src/ConsulDriver.php',
+        'Hyperf\\ServiceGovernanceConsul\\Listener\\RegisterDriverListener' => __DIR__ . '/..' . '/hyperf/service-governance-consul/src/Listener/RegisterDriverListener.php',
+        'Hyperf\\ServiceGovernanceNacos\\Client' => __DIR__ . '/..' . '/hyperf/service-governance-nacos/src/Client.php',
+        'Hyperf\\ServiceGovernanceNacos\\ClientFactory' => __DIR__ . '/..' . '/hyperf/service-governance-nacos/src/ClientFactory.php',
+        'Hyperf\\ServiceGovernanceNacos\\ConfigProvider' => __DIR__ . '/..' . '/hyperf/service-governance-nacos/src/ConfigProvider.php',
+        'Hyperf\\ServiceGovernanceNacos\\Listener\\MainWorkerStartListener' => __DIR__ . '/..' . '/hyperf/service-governance-nacos/src/Listener/MainWorkerStartListener.php',
+        'Hyperf\\ServiceGovernanceNacos\\Listener\\OnShutdownListener' => __DIR__ . '/..' . '/hyperf/service-governance-nacos/src/Listener/OnShutdownListener.php',
+        'Hyperf\\ServiceGovernanceNacos\\Listener\\RegisterDriverListener' => __DIR__ . '/..' . '/hyperf/service-governance-nacos/src/Listener/RegisterDriverListener.php',
+        'Hyperf\\ServiceGovernanceNacos\\NacosDriver' => __DIR__ . '/..' . '/hyperf/service-governance-nacos/src/NacosDriver.php',
+        'Hyperf\\ServiceGovernanceNacos\\Process\\InstanceBeatProcess' => __DIR__ . '/..' . '/hyperf/service-governance-nacos/src/Process/InstanceBeatProcess.php',
         'Hyperf\\ServiceGovernance\\ConfigProvider' => __DIR__ . '/..' . '/hyperf/service-governance/src/ConfigProvider.php',
         'Hyperf\\ServiceGovernance\\DriverInterface' => __DIR__ . '/..' . '/hyperf/service-governance/src/DriverInterface.php',
         'Hyperf\\ServiceGovernance\\DriverManager' => __DIR__ . '/..' . '/hyperf/service-governance/src/DriverManager.php',

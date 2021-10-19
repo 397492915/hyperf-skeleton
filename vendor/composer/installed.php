@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'v2.2.2',
-        'version' => '2.2.2.0',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '8489577cd42ca919dffe9c9b6add4c4fec8d09e7',
         'name' => 'hyperf/hyperf-skeleton',
         'dev' => true,
     ),
@@ -347,12 +347,12 @@
             'dev_requirement' => false,
         ),
         'hyperf/hyperf-skeleton' => array(
-            'pretty_version' => 'v2.2.2',
-            'version' => '2.2.2.0',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '8489577cd42ca919dffe9c9b6add4c4fec8d09e7',
             'dev_requirement' => false,
         ),
         'hyperf/ide-helper' => array(
@@ -416,6 +416,15 @@
             'install_path' => __DIR__ . '/../hyperf/model-listener',
             'aliases' => array(),
             'reference' => 'fa82b1ac4cf00d3c4f2705e1a0604823b30073e5',
+            'dev_requirement' => false,
+        ),
+        'hyperf/nacos' => array(
+            'pretty_version' => 'v2.2.11',
+            'version' => '2.2.11.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../hyperf/nacos',
+            'aliases' => array(),
+            'reference' => '768eec60866341cbfa827f193410d8a769622446',
             'dev_requirement' => false,
         ),
         'hyperf/pool' => array(
@@ -488,6 +497,24 @@
             'install_path' => __DIR__ . '/../hyperf/service-governance',
             'aliases' => array(),
             'reference' => '48234252f637178094aee608a08d272e164d0467',
+            'dev_requirement' => false,
+        ),
+        'hyperf/service-governance-consul' => array(
+            'pretty_version' => 'v2.2.4',
+            'version' => '2.2.4.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../hyperf/service-governance-consul',
+            'aliases' => array(),
+            'reference' => '30f461190e30a82729510aa60cb4fe8626b7703c',
+            'dev_requirement' => false,
+        ),
+        'hyperf/service-governance-nacos' => array(
+            'pretty_version' => 'v2.2.4',
+            'version' => '2.2.4.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../hyperf/service-governance-nacos',
+            'aliases' => array(),
+            'reference' => 'd402169d818bd9282787cb239e851be8fa7411b3',
             'dev_requirement' => false,
         ),
         'hyperf/testing' => array(
@@ -925,8 +952,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0',
-                1 => '1.0.0 || 2.0.0 || 3.0.0',
+                0 => '1.0.0 || 2.0.0 || 3.0.0',
+                1 => '1.0|2.0',
             ),
         ),
         'psr/simple-cache' => array(

@@ -15,6 +15,8 @@ Router::addRoute(['GET', 'POST', 'HEAD'], '/', 'App\Controller\IndexController@i
 Router::addRoute(['GET', 'POST', 'HEAD'], '/index/test1', 'App\Controller\IndexController@test1');
 Router::addRoute(['GET', 'POST', 'HEAD'], '/index/test2', 'App\Controller\IndexController@test2');
 Router::addRoute(['GET', 'POST', 'HEAD'], '/index/test3', 'App\Controller\IndexController@test3');
+Router::addRoute(['GET', 'POST', 'HEAD'], '/index/test4', 'App\Controller\IndexController@test4');
+Router::addRoute(['GET', 'POST', 'HEAD'], '/index/test5', 'App\Controller\IndexController@test5');
 
 Router::get('/favicon.ico', function () {
     return '';

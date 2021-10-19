@@ -9,7 +9,10 @@ declare(strict_types=1);
  * @contact  group@hyperf.io
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
-return [
-    App\JsonRpc\CalculatorServiceInterface::class => App\JsonRpc\CalculatorServiceConsumer::class,
-    App\JsonRpc\TestServiceInterface::class => App\JsonRpc\TestServiceConsumer::class,
-];
+namespace Hyperf\Nacos\Exception;
+
+use Throwable;
+
+interface NacosThrowable extends Throwable
+{
+}

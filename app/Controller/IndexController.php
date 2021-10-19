@@ -11,6 +11,9 @@ declare(strict_types=1);
  */
 namespace App\Controller;
 
+use App\JsonRpc\CalculatorServiceInterface;
+use App\JsonRpc\TestService;
+use App\JsonRpc\TestServiceInterface;
 use App\Utils\Log;
 use Hyperf\Utils\Context;
 use Hyperf\Utils\Coroutine;
@@ -106,5 +109,17 @@ class IndexController extends AbstractController
                 return Coroutine::id();
             }
         ]);
+    }
+
+    public function test4(CalculatorServiceInterface $calculatorService)
+    {
+        Log::get()->info(Coroutine::id());
+        return $calculatorService->add(2,5);
+    }
+
+    public function test5(TestServiceInterface $testService)
+    {
+        Log::get()->info(Coroutine::id());
+        return $testService->add(2,5);
     }
 }
