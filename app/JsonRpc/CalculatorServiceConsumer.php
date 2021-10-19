@@ -6,6 +6,11 @@ namespace App\JsonRpc;
 
 use Hyperf\RpcClient\AbstractServiceClient;
 
+/**
+ * 消费者类
+ * Class CalculatorServiceConsumer
+ * @package App\JsonRpc
+ */
 class CalculatorServiceConsumer extends AbstractServiceClient implements CalculatorServiceInterface
 {
     /**

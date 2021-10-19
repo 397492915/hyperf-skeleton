@@ -9,7 +9,7 @@ use Hyperf\RpcServer\Annotation\RpcService;
 use Hyperf\Utils\Coroutine;
 
 /**
- * 注意，如希望通过服务中心来管理服务，需在注解内增加 publishTo 属性
+ * 服务提供者
  * @RpcService(name="TestService", protocol="jsonrpc-http", server="toc-rpc" ,publishTo="consul")
  */
 class TestService implements TestServiceInterface

@@ -6,6 +6,11 @@ namespace App\JsonRpc;
 
 use Hyperf\RpcClient\AbstractServiceClient;
 
+/**
+ * 消费者类
+ * Class TestServiceConsumer
+ * @package App\JsonRpc
+ */
 class TestServiceConsumer extends AbstractServiceClient implements TestServiceInterface
 {
     /**
