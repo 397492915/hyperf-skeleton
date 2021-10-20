@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '8489577cd42ca919dffe9c9b6add4c4fec8d09e7',
+        'reference' => '696c536a1c3a5a91d06222011ce9f85d10aadf48',
         'name' => 'hyperf/hyperf-skeleton',
         'dev' => true,
     ),
@@ -140,12 +140,12 @@
             'dev_requirement' => true,
         ),
         'hyperf/amqp' => array(
-            'pretty_version' => 'v2.2.8',
-            'version' => '2.2.8.0',
+            'pretty_version' => 'v2.2.12',
+            'version' => '2.2.12.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../hyperf/amqp',
             'aliases' => array(),
-            'reference' => '1478c3fbc491e64c2353ada82d8d596ec970eb83',
+            'reference' => '514ccc431ff2c22bc96f3cd29ec3264be80948a7',
             'dev_requirement' => false,
         ),
         'hyperf/async-queue' => array(
@@ -352,7 +352,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '8489577cd42ca919dffe9c9b6add4c4fec8d09e7',
+            'reference' => '696c536a1c3a5a91d06222011ce9f85d10aadf48',
             'dev_requirement' => false,
         ),
         'hyperf/ide-helper' => array(

@@ -11,10 +11,13 @@ declare(strict_types=1);
  */
 namespace App\Controller;
 
+use App\Amqp\Producer\DemoProducer;
 use App\JsonRpc\CalculatorServiceInterface;
 use App\JsonRpc\TestService;
 use App\JsonRpc\TestServiceInterface;
 use App\Utils\Log;
+use Hyperf\Amqp\Producer;
+use Hyperf\Utils\ApplicationContext;
 use Hyperf\Utils\Context;
 use Hyperf\Utils\Coroutine;
 use Hyperf\Utils\Exception\ParallelExecutionException;
@@ -131,5 +134,16 @@ class IndexController extends AbstractController
     {
         Log::get()->info(Coroutine::id());
         return $testService->add(2,5);
+    }
+
+    /**
+     * amqp test
+     * @return bool
+     */
+    public function test6()
+    {
+        $message = new DemoProducer([1,2,3,'a'=>'b']);
+        $producer = ApplicationContext::getContainer()->get(Producer::class);
+        return $producer->produce($message);
     }
 }

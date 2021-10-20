@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac2dd1f7b2852a64ed4846f8904148af",
+    "content-hash": "217ce38ca76fe2101b79f034610c6018",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -743,16 +743,16 @@
         },
         {
             "name": "hyperf/amqp",
-            "version": "v2.2.8",
+            "version": "v2.2.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/amqp.git",
-                "reference": "1478c3fbc491e64c2353ada82d8d596ec970eb83"
+                "reference": "514ccc431ff2c22bc96f3cd29ec3264be80948a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/amqp/zipball/1478c3fbc491e64c2353ada82d8d596ec970eb83",
-                "reference": "1478c3fbc491e64c2353ada82d8d596ec970eb83",
+                "url": "https://api.github.com/repos/hyperf/amqp/zipball/514ccc431ff2c22bc96f3cd29ec3264be80948a7",
+                "reference": "514ccc431ff2c22bc96f3cd29ec3264be80948a7",
                 "shasum": ""
             },
             "require": {
@@ -802,7 +802,7 @@
                 "pull-request": "https://github.com/hyperf/hyperf/pulls",
                 "source": "https://github.com/hyperf/hyperf"
             },
-            "time": "2021-09-10T04:12:02+00:00"
+            "time": "2021-10-18T01:16:14+00:00"
         },
         {
             "name": "hyperf/async-queue",
