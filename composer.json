@@ -16,6 +16,7 @@
         "hyperf/amqp": "^2.2",
         "hyperf/async-queue": "~2.2.0",
         "hyperf/cache": "~2.2.0",
+        "hyperf/circuit-breaker": "^2.2",
         "hyperf/command": "~2.2.0",
         "hyperf/config": "~2.2.0",
         "hyperf/config-etcd": "~2.2.0",
@@ -30,14 +31,16 @@
         "hyperf/memory": "~2.2.0",
         "hyperf/model-cache": "~2.2.0",
         "hyperf/process": "~2.2.0",
+        "hyperf/rate-limit": "^2.2",
         "hyperf/redis": "~2.2.0",
+        "hyperf/retry": "^2.2",
         "hyperf/rpc": "~2.2.0",
         "hyperf/rpc-client": "^2.2",
         "hyperf/rpc-server": "^2.2",
         "hyperf/service-governance": "~2.2.0",
         "hyperf/service-governance-consul": "^2.2",
         "hyperf/service-governance-nacos": "^2.2",
-        "hyperf/tracer": "~2.2.0"
+        "hyperf/tracer": "^2.2"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.0",
