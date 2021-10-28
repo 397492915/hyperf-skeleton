@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '3b161b4eb79137e7a93ab9e999bea7784241dccc',
+        'reference' => '6b0e7e5984c9d23faeb36c372da390e9d9fdb217',
         'name' => 'hyperf/hyperf-skeleton',
         'dev' => true,
     ),
@@ -84,6 +84,12 @@
             'aliases' => array(),
             'reference' => 'e864bbf5904cb8f5bb334f99209b48018522f042',
             'dev_requirement' => false,
+        ),
+        'endclothing/prometheus_client_php' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '*',
+            ),
         ),
         'fig/http-message-util' => array(
             'pretty_version' => '1.1.5',
@@ -370,7 +376,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '3b161b4eb79137e7a93ab9e999bea7784241dccc',
+            'reference' => '6b0e7e5984c9d23faeb36c372da390e9d9fdb217',
             'dev_requirement' => false,
         ),
         'hyperf/ide-helper' => array(
@@ -416,6 +422,15 @@
             'install_path' => __DIR__ . '/../hyperf/memory',
             'aliases' => array(),
             'reference' => 'e26bfea8c73af4604b217a1b449fbc64a06985d3',
+            'dev_requirement' => false,
+        ),
+        'hyperf/metric' => array(
+            'pretty_version' => 'v2.2.12',
+            'version' => '2.2.12.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../hyperf/metric',
+            'aliases' => array(),
+            'reference' => '118674fb57a9035ce7f505dc62b9aadb74f02561',
             'dev_requirement' => false,
         ),
         'hyperf/model-cache' => array(
@@ -553,6 +568,15 @@
             'reference' => 'd402169d818bd9282787cb239e851be8fa7411b3',
             'dev_requirement' => false,
         ),
+        'hyperf/snowflake' => array(
+            'pretty_version' => 'v2.2.0',
+            'version' => '2.2.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../hyperf/snowflake',
+            'aliases' => array(),
+            'reference' => 'f1e28b6d9557c4323da1cd4d579ae2c467151c2d',
+            'dev_requirement' => false,
+        ),
         'hyperf/testing' => array(
             'pretty_version' => 'v2.2.11',
             'version' => '2.2.11.0',
@@ -589,6 +613,12 @@
             'reference' => 'de92acea67971be2a9f7930e5d37924f377f64cf',
             'dev_requirement' => false,
         ),
+        'jimdo/prometheus_client_php' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '*',
+            ),
+        ),
         'kodova/hamcrest-php' => array(
             'dev_requirement' => true,
             'replaced' => array(
@@ -612,6 +642,12 @@
             'aliases' => array(),
             'reference' => 'c53d8537f108fac3fae652677a19735db730ba46',
             'dev_requirement' => false,
+        ),
+        'lkaemmerling/prometheus_client_php' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '*',
+            ),
         ),
         'malkusch/lock' => array(
             'pretty_version' => '1.0.0',
@@ -888,6 +924,15 @@
             'aliases' => array(),
             'reference' => 'c814a05837f2edb0d1471d6e3f4ab3501ca3899a',
             'dev_requirement' => true,
+        ),
+        'promphp/prometheus_client_php' => array(
+            'pretty_version' => 'v2.2.2',
+            'version' => '2.2.2.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../promphp/prometheus_client_php',
+            'aliases' => array(),
+            'reference' => '5d27b6d84900d9b3208b5b6bf88d10ed0dc7a154',
+            'dev_requirement' => false,
         ),
         'psr/cache' => array(
             'pretty_version' => '1.0.1',
@@ -1240,6 +1285,15 @@
             'aliases' => array(),
             'reference' => '4b78e55b179003a42523a362cc0e8327f7a69b5e',
             'dev_requirement' => true,
+        ),
+        'symfony/polyfill-apcu' => array(
+            'pretty_version' => 'v1.23.0',
+            'version' => '1.23.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/polyfill-apcu',
+            'aliases' => array(),
+            'reference' => '80f7fb64c5b64ebcba76f40215e63808a2062a18',
+            'dev_requirement' => false,
         ),
         'symfony/polyfill-ctype' => array(
             'pretty_version' => 'v1.23.0',

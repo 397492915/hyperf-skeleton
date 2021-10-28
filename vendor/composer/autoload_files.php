@@ -33,6 +33,7 @@ return array(
     'f99ca7ab6b69ea13de674def3146fa4b' => $vendorDir . '/openzipkin/zipkin/src/Zipkin/Tags.php',
     '809f512612033e8c2eaab5c48aa38d39' => $vendorDir . '/openzipkin/zipkin/src/Zipkin/Annotations.php',
     '0956408cbb3b629c2aedbc429d54f919' => $vendorDir . '/openzipkin/zipkin/src/Zipkin/SpanName.php',
+    '32dcc8afd4335739640db7d200c1971d' => $vendorDir . '/symfony/polyfill-apcu/bootstrap.php',
     '6124b4c8570aa390c21fafd04a26c69f' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
     'fdea4480df6c5882835d3b60a113de4d' => $vendorDir . '/hyperf/config/src/Functions.php',
 );

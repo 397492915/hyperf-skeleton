@@ -21,6 +21,7 @@ Router::addRoute(['GET', 'POST', 'HEAD'], '/index/test6', 'App\Controller\IndexC
 Router::addRoute(['GET', 'POST', 'HEAD'], '/rate-limit/test', 'App\Controller\RateLimitController@test');
 Router::addRoute(['GET', 'POST', 'HEAD'], '/retry/test', 'App\Controller\RetryController@test');
 Router::addRoute(['GET', 'POST', 'HEAD'], '/circuit/test', 'App\Controller\CircuitController@test');
+Router::addRoute(['GET', 'POST', 'HEAD'], '/snow-flake/test', 'App\Controller\SnowFlakeController@test');
 
 Router::get('/favicon.ico', function () {
     return '';
