@@ -38,6 +38,20 @@ class IndexController extends AbstractController
     }
 
     /**
+     * Channel特性，协程间通信
+     * http://127.0.0.1:9501/index/test
+     * @return mixed
+     */
+    public function test()
+    {
+        $channel = new \Swoole\Coroutine\Channel();
+        co(function () use ($channel) {
+            $channel->push('data');
+        });
+        return $channel->pop();
+    }
+
+    /**
      * test WaitGroup
      * http://127.0.0.1:9501/index/test1
      */
